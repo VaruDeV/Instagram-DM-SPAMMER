@@ -1,3 +1,4 @@
+#skid it do what ever you want i dont give a fuck abt it just ENJOY!
 import threading
 from instagrapi import Client
 from instagrapi.exceptions import ClientNotFoundError
@@ -9,16 +10,16 @@ init()
 os.system("title Msg Spammer by Techvy & cls")
 print(f"{Fore.CYAN}[{time.strftime('%H:%M:%S')}] Trying to login in to the account.")
 client = Client()
-client.login("terimummymeri88", "knightpro")
+client.login("username", "pass")
 print(f"[{time.strftime('%H:%M:%S')}] login success{Style.RESET_ALL}")
 
-user_id = "49150641809"
+user_id = "user-id"
 
 print(f"{Fore.MAGENTA}[{time.strftime('%H:%M:%S')}] sending msges..")
 {Style.RESET_ALL}
 def send_message(num):
     {Fore.BLUE}
-    message = f"Discord Tools & Methods"
+    message = f"message-to-send"
     {Style.RESET_ALL}
     try:
         client.direct_send(message, [user_id])
@@ -30,6 +31,7 @@ def send_message(num):
 
 
 threads = []
+#no of msges edit that 100 to no of msges you want to send
 for i in range(1, 100):
     t = threading.Thread(target=send_message, args=(i, ))
     threads.append
